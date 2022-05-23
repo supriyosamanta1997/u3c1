@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #navbar{
+        
+        display: flex;
+        justify-content: center;
+      }
+      .input{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+
+      }
+      #products{
+       width: 20%;
+       margin: auto;
+      }
+      h2{
+        display: flex;
+        justify-content: center;
+      }
+      #add_product{
+       margin-left: 30%;
+        margin-top: 20px;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <button id="show_products">show products</button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+      <form id="products" onsubmit="productsData()">
+        <input type="text" placeholder="Type" id="type" class="input">
+        <input type="text" placeholder="Description" id="desc" class="input">
+        <input type="text" placeholder="price" id="price" class="input">
+        <input type="url" placeholder="image" id="image" class="input">
+        <button id="add_product">Add Product</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
